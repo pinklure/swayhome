@@ -1,0 +1,61 @@
+"languageserver": {
+    "bash": {
+        "command": "bash-language-server",
+        "args": ["start"],
+        "filetypes": ["sh"],
+        "ignoredRootPaths": ["~"]
+    },
+    "ccls": {
+        "command": "ccls",
+        "filetypes": ["c", "cc", "cpp"],
+        "rootPatterns": [".ccls", "compile_commands.json", ".git/"],
+        "initializationOptions" :{
+            "cache": {
+                "directory": "~/.local/cache/ccls-cache",
+                "format": "binary",
+                "retainInMemory": 1
+            },
+            "client": {
+                "snippetSupport": true
+            },
+            "completion": {
+                "placeholder": false,
+                "detailedLabel": true,
+                "filterAndSort": true
+            },
+            "diagnostics": {
+                "onOpen": 0,
+                "onChange": 1000,
+                "onSave": 0
+            },
+            "index": {
+                "threads": 4,
+                "comments": 0,
+                "multiVersion": 0,
+                "multiVersionBlacklist": [
+                    "^/usr/include"
+                ],
+                "onChange": false,
+                "trackDependency": 2
+            },
+            "clang": {
+                ""
+            }
+        }
+    },
+    "cmake": {
+        "command": "cmake-language-server",
+        "filetypes": ["cmake"],
+        "rootPatterns": [
+            "build/"
+        ],
+        "initializationOptions": {
+            "buildDirectory": "build"
+        }
+    },
+    "rust": {
+        "command": "rust-analyzer",
+        "filetypes": ["rust"],
+        "rootPatterns": ["Cargo.toml"]
+    }
+}
