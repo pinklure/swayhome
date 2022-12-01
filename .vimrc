@@ -1,11 +1,9 @@
 set encoding=utf-8
 set nu
-set paste
 set mouse=v
 syntax on
 set hlsearch
 set is hls
-" set tabstop=2
 set shiftwidth=4
 set softtabstop=4
 set expandtab
@@ -13,6 +11,9 @@ set foldmethod=syntax
 set nofoldenable
 set foldlevel=1
 
+set rtp+=/usr/share/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
 
 call plug#begin('~/.vim/plugged')
 
@@ -52,10 +53,10 @@ endif
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? "\<C-n>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort

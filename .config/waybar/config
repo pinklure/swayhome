@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "height": 25,
-    "spacing": 4,
+    "spacing": 2,
 
     "modules-left": ["sway/workspaces","sway/window"],
     "modules-center": [],
@@ -89,7 +89,7 @@
 
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon}  {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",

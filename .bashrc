@@ -164,4 +164,5 @@ export HISTFILESIZE=-1
 alias cmake='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 '
 alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
 alias with_proxy='http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890'
+alias include_headers='export C_INCLUDE_PATH=/usr/src/linux/include/'
 . "$HOME/.cargo/env"
