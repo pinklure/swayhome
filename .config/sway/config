@@ -20,7 +20,8 @@ bindsym Shift+Alt+h exec clipman pick -t rofi
 bindsym $mod+d exec rofi -i -show drun -modi drun -show-icons
 bindsym Ctrl+Alt+a exec screenshot
 bindsym $mod+Tab exec rofi -i -show run
-bindsym $mod+F2 exec $proxy_env microsoft-edge-stable $chromium_option
+# bindsym $mod+F2 exec $proxy_env microsoft-edge-stable $chromium_option
+bindsym $mod+F2 exec $proxy_env google-chrome-stable
 bindsym $mod+F3 exec thunar
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill

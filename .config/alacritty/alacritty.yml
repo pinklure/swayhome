@@ -34,8 +34,8 @@ scrolling:
 font:
   normal:
     family: DejaVu Sans Mono
-    #style: Regular
-    style: Bold
+    style: Regular
+    # style: Bold
 
 
   bold:

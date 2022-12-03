@@ -4,8 +4,8 @@ set mouse=v
 syntax on
 set hlsearch
 set is hls
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set foldmethod=syntax
 set nofoldenable
